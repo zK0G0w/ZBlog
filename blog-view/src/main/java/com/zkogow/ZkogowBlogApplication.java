@@ -1,6 +1,7 @@
 package com.zkogow;
 
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -11,6 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 
 @SpringBootApplication
+@MapperScan("com.zkogow.mapper")
 public class ZkogowBlogApplication {
     public static void main(String[] args) {
         SpringApplication.run(ZkogowBlogApplication.class, args);
